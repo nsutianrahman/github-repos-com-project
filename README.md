@@ -1,4 +1,4 @@
-Here is link of deployment : https://github-repo-com.herokuapp.com/
+Here is link of deployment : https://github-repo-com.herokuapp.com/ (Try refreshing if heroku says there is nothing)
 
 In order to run this application on your own one have to do following task :
 
