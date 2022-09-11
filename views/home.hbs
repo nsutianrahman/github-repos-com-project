@@ -1,0 +1,45 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <!-- CSS only -->
+    <link rel='stylesheet' href='/css/home.css' />
+    <title>GithubRepos ~ Create Github Repos in Seconds!!</title>
+  </head>
+  <body>
+    <nav class='navbar'>GithubRepos.com</nav>
+    <div class='main'>
+      <div class='create-repo-form'>
+        <div>Fill this form to create a repo in your github account</div>
+        <input
+          spellcheck='false'
+          placeholder='Please enter name of repo here'
+          id='create-repo-form-name'
+        />
+        <textarea
+          spellcheck='false'
+          placeholder='Please enter description of repo here'
+          rows='5'
+          id='create-repo-form-desc'
+        ></textarea>
+        <select name='language' id='create-repo-form-lang'>
+          {{#each lang as |item|}}
+            <option value={{route}}>{{lang}}</option>
+          {{/each}}
+        </select>
+        <button class='create-repo-form-submit-btn' onclick='createRepo()'>
+          Checkout your repo
+        </button>
+      </div>
+      <div class='tagline-wrapper'>
+        <div class='tagline'>
+          <div class='tagline-item'>Smarter Way to</div>
+          <div class='tagline-item'>Create</div>
+          <div class='tagline-item'>Github Repos&nbsp;!&nbsp;!</div>
+        </div>
+      </div>
+    </div>
+    <script src='/js/home.js'></script>
+  </body>
+</html>
